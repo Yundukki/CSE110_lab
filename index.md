@@ -28,45 +28,19 @@ Hello! My name's Leo and I am currently a fourth year majoring in Math-Computer 
 
 ### ***Experience***
 <br/>  
-While I do not have a lot of out of class experience, a friend and I created a partially unfinished app, called Netflix and Chill, where you would be able to swipe on movie selections and match with others based on movie preferences. Below is a part of our set up and tutorial page code:
+While I do not have a lot of out of class experience, a friend and I created a partially unfinished app, called Netflix and Chill, where you would be able to swipe on movie selections and match with others based on movie preferences. Below is a part of our set up code:
 
 ```
-<NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="Welcome"
-          component={Welcome}
-          options={{ title: 'Welcome', headerShown: false, }}
-        />
-        <Stack.Screen
-          name="Main"
-          component={MainScreen}
-          options={{ headerShown: false, }}
-        />
-        <Stack.Screen name="Profile" component={ProfileScreen} />
-        <Stack.Screen name="Tutorial1" component={Tutorial1}
-        options={{
-          title: 'Netflix and Chill', 
-          headerStyle: {backgroundColor: '#47497d'}, 
-          headerTitleStyle: {fontSize: 20, color: '#FFFFFF'},
-          headerBackVisible: false,
-          }}  />
-        <Stack.Screen name="Tutorial2" component={Tutorial2}
-        options={{
-            title: 'Netflix and Chill', 
-            headerStyle: {backgroundColor: '#47497d'}, 
-            headerTitleStyle: {fontSize: 20, color: '#FFFFFF'},
-            headerBackVisible: false,
-            }} />
-            <Stack.Screen name="SignUp" component={SignUp}
-        options={{
-            title: 'Netflix and Chill', 
-            headerStyle: {backgroundColor: '#47497d'}, 
-            headerTitleStyle: {fontSize: 20, color: '#FFFFFF'},
-            headerBackVisible: false,
-            }} />
-      </Stack.Navigator>
-    </NavigationContainer>
+  <Stack.Screen
+    name="Welcome"
+    component={Welcome}
+    options={{ title: 'Welcome', headerShown: false, }}
+  />
+  <Stack.Screen
+    name="Main"
+    component={MainScreen}
+    options={{ headerShown: false, }}
+  />
 ```
 <br/>
 
